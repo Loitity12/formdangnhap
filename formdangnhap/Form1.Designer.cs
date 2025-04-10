@@ -10,7 +10,7 @@
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -90,12 +90,11 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(0, 0);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(532, 236);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // button5
             // 
@@ -183,7 +182,6 @@
             label3.Size = new Size(95, 19);
             label3.TabIndex = 1;
             label3.Text = "MẬT KHẨU";
-            label3.Click += label2_Click;
             // 
             // label2
             // 
@@ -219,7 +217,7 @@
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(label5);
             groupBox2.Controls.Add(label4);
-            groupBox2.Location = new Point(550, 12);
+            groupBox2.Location = new Point(267, 123);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(532, 236);
             groupBox2.TabIndex = 1;
@@ -310,7 +308,7 @@
             groupBox3.Controls.Add(label9);
             groupBox3.Controls.Add(label8);
             groupBox3.Controls.Add(label7);
-            groupBox3.Location = new Point(12, 244);
+            groupBox3.Location = new Point(267, 123);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(532, 236);
             groupBox3.TabIndex = 2;
@@ -423,6 +421,7 @@
             // 
             // groupBox4
             // 
+            groupBox4.Controls.Add(groupBox1);
             groupBox4.Controls.Add(button14);
             groupBox4.Controls.Add(button13);
             groupBox4.Controls.Add(textBox10);
@@ -434,7 +433,7 @@
             groupBox4.Controls.Add(label13);
             groupBox4.Controls.Add(label12);
             groupBox4.Controls.Add(label11);
-            groupBox4.Location = new Point(550, 244);
+            groupBox4.Location = new Point(267, 123);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(532, 236);
             groupBox4.TabIndex = 3;
@@ -542,16 +541,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1087, 486);
+            ClientSize = new Size(999, 608);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
             Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.Black;
             Name = "Form1";
             Text = "QUẢN LÝ THƯ VIỆN";
-            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

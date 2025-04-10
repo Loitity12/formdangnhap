@@ -8,11 +8,6 @@
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -56,6 +51,7 @@
         private void button4_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = false;
+            groupBox2.Location = groupBox1.Location; // Ensure alignment
             groupBox2.Visible = true;
             groupBox3.Visible = false;
             groupBox4.Visible = false;
@@ -81,6 +77,7 @@
             MessageBox.Show("Xác thực thành công!", "Thông báo!", MessageBoxButtons.OK);
             groupBox1.Visible = false;
             groupBox2.Visible = false;
+            groupBox3.Location = groupBox1.Location; // Ensure alignment
             groupBox3.Visible = true;
             groupBox4.Visible = false;
         }
@@ -143,6 +140,7 @@
             groupBox1.Visible = false;
             groupBox2.Visible = false;
             groupBox3.Visible = false;
+            groupBox4.Location = groupBox1.Location; // Ensure alignment
             groupBox4.Visible = true;
         }
 
@@ -155,5 +153,5 @@
         }
     }
 
-    
+
 }
